@@ -1,0 +1,10 @@
+# Force GitHub to recognize the repository as Dart
+*.dart linguist-language=Dart
+*.yaml linguist-language=Dart
+*.lock linguist-language=Dart
+
+# Exclude C++ files from language statistics if there are any
+*.cpp linguist-language=Ignore
+*.h linguist-language=Ignore
+*.cc linguist-language=Ignore
+*.hpp linguist-language=Ignore
