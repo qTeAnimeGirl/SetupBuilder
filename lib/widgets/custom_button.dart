@@ -7,8 +7,9 @@ class CustomButton extends StatelessWidget {
   final double width;
   final bool active;
   final bool clicable;
+  final double borderRadius;
   final VoidCallback onTap;
-  const CustomButton({super.key, required this.height, required this.width, required this.active, required this.onTap, required this.title, required this.clicable});
+  const CustomButton({super.key, required this.height, required this.width, required this.active, required this.onTap, required this.title, required this.clicable, required this.borderRadius});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,7 @@ class CustomButton extends StatelessWidget {
           width: width,
           decoration: BoxDecoration(
             color: active ? ThemeConfig().buttonActive : ThemeConfig().buttonDeactivated,
-            borderRadius: BorderRadius.circular(30)
+            borderRadius: BorderRadius.circular(borderRadius)
           ),
           child: Text(
               title,

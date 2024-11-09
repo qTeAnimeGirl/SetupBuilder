@@ -87,6 +87,7 @@ class _InstallerScreenState extends State<InstallerScreen> with WindowListener {
                         CustomButton(
                             height: 50,
                             width: 100,
+                            borderRadius: 20,
                             active: installerController.isStarted ?
                             installerController.isFinished ? true : false :
                             true,

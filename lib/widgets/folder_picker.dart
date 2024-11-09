@@ -55,7 +55,7 @@ class _FolderPickerState extends State<FolderPicker> {
               width: 350,
               decoration: BoxDecoration(
                   color: ThemeConfig().textField,
-                  borderRadius: BorderRadius.circular(30)
+                  borderRadius: BorderRadius.circular(15)
               ),
               child: Padding(
                 padding: const EdgeInsets.all(10),
@@ -77,6 +77,7 @@ class _FolderPickerState extends State<FolderPicker> {
         CustomButton(
             height: 50,
             width: 100,
+            borderRadius: 15,
             active: false,
             onTap: () => {
               changePath()
